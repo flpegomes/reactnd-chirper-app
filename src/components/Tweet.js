@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { formatTweet, formatDate } from '../utils/helpers'
 import { TiArrowBackOutline, TiHeartOutline, TiHeartFullOutline} from 'react-icons/ti/index'
-import { handleToggleTweet } from '../action/tweets'
+import { handleToggleTweet } from '../actions/tweets'
 
 class Tweet extends Component {
     
@@ -32,7 +32,6 @@ class Tweet extends Component {
         }
         
         const { name, avatar, timestamp, text, hasLiked, likes, replies, id, parent } = tweet
-        console.log(avatar)
 
         return (
             <div className='tweet'>
